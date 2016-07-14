@@ -64,6 +64,9 @@ ES6 Samples
 [2](http://jsbin.com/hoqileh/2/edit?js,console))
 * inheritance ([3](http://jsbin.com/hoqileh/3/edit?js,console))
 
+Functional Samples
+------------------
+
 #### Introduction
 * what it means to be functional ([1](http://jsbin.com/pimixu/1/edit?js,console),[2](http://jsbin.com/pimixu/2/edit?js,console),[3](http://jsbin.com/pimixu/3/edit?js,console),[4](http://jsbin.com/pimixu/4/edit?js,console),[5](http://jsbin.com/pimixu/5/edit?js,console),[6](http://jsbin.com/pimixu/6/edit?js,console),[7](http://jsbin.com/pimixu/7/edit?js,console))
 * imperative vs. declarative ([1](http://jsbin.com/cuqapu/1/edit?js,console),[2](http://jsbin.com/cuqapu/2/edit?js,console))
