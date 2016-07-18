@@ -18,11 +18,6 @@ What we will Build
 * [Lab - Dot Click](http://output.jsbin.com/vesayev/1/quiet)
 * [Lab - Star Component](http://output.jsbin.com/moyiha/3/quiet)
 
-Challenge Activities
-------------------
-* [Instructions](https://github.com/EvePorcello/react-intro/tree/master/start-dot)
-* [Instructions] (https://github.com/EvePorcello/react-intro/tree/master/start-members)
-
 ES6 Samples
 ----------
 #### Declaring Variables in ES6
