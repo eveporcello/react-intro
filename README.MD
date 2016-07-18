@@ -18,17 +18,17 @@ What we will Build
 * [Lab - Dot Click](http://output.jsbin.com/vesayev/1/quiet)
 * [Lab - Star Component](http://output.jsbin.com/moyiha/3/quiet)
 
+Challenge Activities
+------------------
+* [Instructions](https://github.com/EvePorcello/react-intro/tree/master/start-dot)
+* [Instructions] (https://github.com/EvePorcello/react-intro/tree/master/start-members)
+
 ES6 Samples
 ----------
 #### Declaring Variables in ES6
 * const ([1](http://jsbin.com/gapoxa/1/edit?js,console),[2](http://jsbin.com/gapoxa/2/edit?js,console))
 * let ([3](http://jsbin.com/gapoxa/3/edit?js,console),[4](http://jsbin.com/gapoxa/4/edit?js,console))
-* template strings ([5](http://jsbin.com/gapoxa/5/edit?js,output),
-[6](http://jsbin.com/gapoxa/6/edit?js,output),
-[7](http://jsbin.com/gapoxa/7/edit?js,console),
-[8](http://jsbin.com/gapoxa/8/edit?js,console),
-[9](http://jsbin.com/gapoxa/9/edit?js,console),
-[10](http://jsbin.com/gapoxa/10/edit?js,output))
+* template strings ([5](http://jsbin.com/gapoxa/5/edit?js,output),[6](http://jsbin.com/gapoxa/6/edit?js,output),[7](http://jsbin.com/gapoxa/7/edit?js,console),[8](http://jsbin.com/gapoxa/8/edit?js,console),[9](http://jsbin.com/gapoxa/9/edit?js,console),[10](http://jsbin.com/gapoxa/10/edit?js,output))
 
 #### ES6 Functions
 * default parameters ([1](http://jsbin.com/yeqexu/1/edit?js,console),
@@ -118,10 +118,6 @@ Challenge : Star Component
 Events, State, Refs
 ----------
 * [Passing State (1-3)](http://jsbin.com/xoqaki/1/edit?js)
-
-Challenge : Dot Component
-----------
-* [Instructions](https://github.com/MoonHighway/react-kickoff/tree/master/start-dot)
 
 Nesting Components
 ----------

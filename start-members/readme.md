@@ -5,11 +5,9 @@ We challenge you to build a member's list with fake member data from [http://ran
 
 1 - Build a <Member /> Component
 ----------------------
-First construct a component for a single member.  You can do this on JSBin or locally. 
+First construct a component for a single member. 
 
 * [Demo of <Member /> Component](http://output.jsbin.com/quwara/1/quiet)
-* [Start JSBin for <Member /> Component](http://jsbin.com/vajiwo/3/edit?js,output)
-
 
 #### requirements:
 
