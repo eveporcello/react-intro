@@ -12,6 +12,8 @@ Topics
 * Understanding State
 * Nesting Components
 
+[Slides] (https://docs.google.com/presentation/d/1Nf8iff6C6NhEta09Mtn4DpY3YFo7tTHEXqgntqfjMno/edit?usp=sharing)
+
 What we will Build
 ----------
 * [Bulletin Board](http://output.jsbin.com/nusune/1/quiet)
