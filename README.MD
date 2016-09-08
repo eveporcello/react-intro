@@ -24,6 +24,7 @@ Useful Links
 --------
 * [Structuring a Large Scale App] (http://engineering.kapost.com/2016/01/organizing-large-react-applications/)
 * [React on Egghead] (https://egghead.io/technologies/react)
+* [Time Travel Debugging] (https://onsen.io/blog/react-redux-devtools-with-time-travel/)
 
 Related Libraries
 * [React Router] (https://github.com/reactjs/react-router)
