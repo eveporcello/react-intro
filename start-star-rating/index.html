@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Star Rating</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.38/browser.js">
+    </script>
+    <style>
+        .star {
+            cursor: pointer;
+            height: 25px;
+            width: 25px;
+            margin: 2px;
+            float: left;
+            background-color: grey;
+            -webkit-clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%);
+            clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%);
+        }
+    </style>
+</head>
+<body>
+<div id="react-container"></div>
+<script type="text/babel">
+    // Create a component called Star
+    const Star = ({color, onClick}) => {
+       return <div className="star"
+                         style={{backgroundColor: color}}
+                         onClick={onClick}>
+                    </div>
+    };
+
+    class StarRating extends React.Component {
+        constructor() {
+            super();
+            this.state = {starsSelected: 5};
+            this.select = this.select.bind(this);
+        }
+        select(starNumber) {
+            this.setState({starsSelected: starNumber});
+        }
+        renderStars() {
+            var i;
+            var stars = [];
+            for (i=1; i<= this.props.stars; i++) {
+                stars.push(<Star color={(i<=this.state.starsSelected) ? 'red' : 'grey'}
+                                 key={i}
+                                 onClick={this.select.bind(null, i)}
+                           />)
+            }
+            return stars;
+        }
+        render() {
+            return (<div>
+                       {this.renderStars()}
+                       <p>{this.state.starsSelected} of {this.props.stars} stars</p>
+                    </div>
+          )
+        }
+    }
+
+    Star.defaultProps = {
+      color: 'grey'
+    };
+    Star.propTypes = {
+      color: React.PropTypes.string
+    };
+    ReactDOM.render(<StarRating stars={5}/>, document.getElementById('react-container'));
+
+</script>
+</body>
+</html>

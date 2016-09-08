@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dot Click</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.38/browser.js">
+    </script>
+    <style>
+        .dot {
+            width: 4em;
+            height: 4em;
+            background-color: blue;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        p {
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+<div id="react-container"></div>
+<script type="text/babel">
+    // Create a component called Dot
+    // Display a title of the dot click from props
+    // Add a click handler to count the number of clicks
+    // Display the current number of clicks
+
+    // Sample Output: https://output.jsbin.com/vesayev/1/quiet
+    class Dot extends React.Component {
+        constructor() {
+            super();
+            this.state = {count: 0};
+            this.click = this.click.bind(this);
+        }
+        click() {
+            this.setState({count: this.state.count + 1})
+        }
+        render() {
+            return (<div>
+                        <h1>{this.props.title}</h1>
+                        <div className="dot" onClick={this.click}></div>
+                        <p>Clicks: {this.state.count}</p>
+                    </div>
+          )
+        }
+    }
+    ReactDOM.render(<Dot title="Click the Dot"/>,
+                    document.getElementById('react-container'));
+</script>
+</body>
+</html>
