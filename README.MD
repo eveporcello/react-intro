@@ -20,6 +20,15 @@ What we will Build
 * [Lab - Dot Click](http://output.jsbin.com/vesayev/1/quiet)
 * [Lab - Star Component](http://output.jsbin.com/moyiha/3/quiet)
 
+Useful Links
+--------
+* [Structuring a Large Scale App] (http://engineering.kapost.com/2016/01/organizing-large-react-applications/)
+* [React on Egghead] (https://egghead.io/technologies/react)
+
+Related Libraries
+* [React Router] (https://github.com/reactjs/react-router)
+* [Redux] (https://redux.js.org)
+
 ES6 Samples
 ----------
 #### Declaring Variables in ES6
