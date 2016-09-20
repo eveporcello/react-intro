@@ -14,7 +14,6 @@ Topics
 
 What we will Build
 ----------
-* [Bulletin Board](http://output.jsbin.com/nusune/1/quiet)
 * [Lab - Dot Click](http://output.jsbin.com/vesayev/1/quiet)
 * [Lab - Star Component](http://output.jsbin.com/moyiha/3/quiet)
 
