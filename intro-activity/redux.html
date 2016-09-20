@@ -14,42 +14,7 @@
 <body>
 <div id="react-container"></div>
 <script type="text/babel">
-    const activityShouter = (state="Sit in a chair", action) => {
-        switch(action.type) {
-            case "TWIST":
-                return "Twistin the night away";
-            case "SHOUT":
-                return "I LOVE SHOUTING!";
-            default:
-                return state;
-        }
-    };
-
-    // Refactor the Activity Shouter Component to use ES6 Destructuring
-    const ActivityShouter = ({value, onTwist, onShout}) => {
-      return <div>
-         <h1>{value}</h1>
-         <button onClick={onTwist}>Start Twisting!</button>
-         <button onClick={onShout}>Start Shouting!</button>
-      </div>
-    };
-
-
-    const { createStore } = Redux;
-    const store = createStore(activityShouter);
-
-    const render = () => {
-        ReactDOM.render(<ActivityShouter value={store.getState()}
-                                         onTwist={() => store.dispatch({type: "TWIST"})}
-                                         onShout={() => store.dispatch({type: "SHOUT"})}/>,
-                        document.getElementById('react-container'));
-    };
-
-
-
-    store.subscribe(render);
-    render();
-
+  
 </script>
 </body>
 </html>
