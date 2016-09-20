@@ -20,43 +20,7 @@
 <body>
 <div id="react-container"></div>
 <script type="text/babel">
-    class Box extends React.Component {
-        componentWillMount() {
-            alert("component is about to mount");
-        }
-        componentDidMount() {
-            console.log("component just mounted");
-        }
-        render() {
-            return (<div id="myDiv"></div>);
-        }
-    }
-
-    class UpdatingBox extends React.Component {
-        constructor() {
-            super();
-            this.state = {
-                backgroundColor: 'green',
-                height: 200,
-                width: 200
-            }
-            this.update = this.update.bind(this);
-        }
-        componentDidUpdate() {
-            console.log("component just updated!");
-        }
-        update() {
-            this.setState({backgroundColor: 'red'});
-        }
-        render() {
-            return (<div style={this.state}
-                         onClick={this.update}>
-                    </div>
-        )
-        }
-    }
-    ReactDOM.render(<UpdatingBox />,
-            document.getElementById('react-container'));
+   
 </script>
 </body>
 </html>
