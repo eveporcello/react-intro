@@ -25,50 +25,7 @@
 <body>
 <div id="react-container"></div>
 <script type="text/babel">
-    // Create a component called Star
-    const Star = ({color, onClick}) => {
-       return <div className="star"
-                         style={{backgroundColor: color}}
-                         onClick={onClick}>
-                    </div>
-    };
-
-    class StarRating extends React.Component {
-        constructor() {
-            super();
-            this.state = {starsSelected: 5};
-            this.select = this.select.bind(this);
-        }
-        select(starNumber) {
-            this.setState({starsSelected: starNumber});
-        }
-        renderStars() {
-            var i;
-            var stars = [];
-            for (i=1; i<= this.props.stars; i++) {
-                stars.push(<Star color={(i<=this.state.starsSelected) ? 'red' : 'grey'}
-                                 key={i}
-                                 onClick={this.select.bind(null, i)}
-                           />)
-            }
-            return stars;
-        }
-        render() {
-            return (<div>
-                       {this.renderStars()}
-                       <p>{this.state.starsSelected} of {this.props.stars} stars</p>
-                    </div>
-          )
-        }
-    }
-
-    Star.defaultProps = {
-      color: 'grey'
-    };
-    Star.propTypes = {
-      color: React.PropTypes.string
-    };
-    ReactDOM.render(<StarRating stars={5}/>, document.getElementById('react-container'));
+   
 
 </script>
 </body>
